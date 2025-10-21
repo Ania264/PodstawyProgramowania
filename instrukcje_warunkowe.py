@@ -1,0 +1,47 @@
+#Instrukcja warunkowa if
+
+''''#Przykład 1:
+liczba = int(input('Podaj liczbę od 1 do 3'))
+
+if liczba == 1:
+    print('jeden')
+if liczba == 2:
+    print('dwa')
+if liczba == 3:
+    print('trzy')'''
+
+
+#Przykład 2:
+'''liczba = int(input('Podaj liczbę od 1 do 3'))
+
+if liczba == 1:
+    print('jeden')
+elif liczba == 2:
+    print('dwa')
+elif liczba == 3:
+    print('trzy')'''
+
+
+
+''''#Przykład 3:
+liczba = int(input('Podaj liczbę całkowitą dodatnią'))
+
+if liczba % 2 == 0:
+    print('parzysta')
+if liczba % 3 == 0:
+    print('Podzielna przez 3')
+if liczba > 0:
+    print('dodatnia')'''
+
+
+#Przykład 4:
+liczba = int(input('Podaj liczbę całkowitą dodatnią'))
+
+if liczba % 2 == 0:
+    print('parzysta')
+elif liczba % 3 == 0:
+    print('Podzielna przez 3')
+elif liczba > 0:
+    print('dodatnia')
+else:
+    print('Czytać nie umiesz?')
