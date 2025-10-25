@@ -23,4 +23,12 @@ pisemny_j_polski = int(input('pisemny polski'))
 pisemny_j_obcy = int(input('pisemny obcy'))
 pisemny_dodatkowy = int(input('pisemny dodatkowy'))
 ustny_j_polski = int(input('ustny polski'))
-ustny_j_obcy = int(input('ustny polski'))
+ustny_j_obcy = int(input('ustny obcy'))
+
+if pisemny_j_polski >= 30 and pisemny_j_obcy >= 30 and pisemny_dodatkowy >= 30 and ustny_j_polski >= 30 \
+    and ustny_j_obcy >= 30:
+    print('zdałeś bez amnestii')
+elif (pisemny_j_polski + pisemny_j_obcy + pisemny_dodatkowy + ustny_j_polski + ustny_j_obcy) / 5 >= 30:
+    print('zdałeś z amnestią')
+else:
+    print('nie zdałeś!')
