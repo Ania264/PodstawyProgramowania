@@ -47,3 +47,6 @@ print(12 // 5)
 
 #Reszta z dzielenia liczby a przez liczbę b
 print(12 % 5)
+
+
+

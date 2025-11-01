@@ -19,7 +19,7 @@ else:
 
 
 #Zadanie 12
-pisemny_j_polski = int(input('pisemny polski'))
+'''pisemny_j_polski = int(input('pisemny polski'))
 pisemny_j_obcy = int(input('pisemny obcy'))
 pisemny_dodatkowy = int(input('pisemny dodatkowy'))
 ustny_j_polski = int(input('ustny polski'))
@@ -31,4 +31,7 @@ if pisemny_j_polski >= 30 and pisemny_j_obcy >= 30 and pisemny_dodatkowy >= 30 a
 elif (pisemny_j_polski + pisemny_j_obcy + pisemny_dodatkowy + ustny_j_polski + ustny_j_obcy) / 5 >= 30:
     print('zdałeś z amnestią')
 else:
-    print('nie zdałeś!')
+    print('nie zdałeś!')'''
+
+print(2 != 3 and 5 ** 3 > (4 + 7) ** 0.5)
+print(not(3 | 16 or 13 // 4 == 1))
