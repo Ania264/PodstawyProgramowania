@@ -7,10 +7,10 @@ napis = 'informatyka'
 print(napis[2:5]) #czyli tak naprawdę od 2 do 4
 
 #2) wycinanie od ... do co ileś
-print(napis[2:10:2])    #czyli program będzie wypisywał znaki od 2 do 10 co 2
+print(napis[2:10:2])    #czyli program będzie wypisywał znaki od 2 do 9 co 2
 
 #3) wycinanie od początku
-print(napis[:3])
+print(napis[:3])    #czyli program wypisze znaki od początku do 2
 
 #4) wycinanie do końca
 print(napis[7:])    #czyli program wypisze wszystkie znaki od 7 do końca
@@ -32,8 +32,8 @@ print(napis2)
 
 #1) poszukiwanie danego fragmentu w tekście
 napis3 = 'matematyka'
-index_gdzie_jest = napis3.find('tem')
-print(index_gdzie_jest)
+index_gdzie_jest1 = napis3.find('tem')
+print(index_gdzie_jest1)
 
 napis4 = 'alabalalalabala'
 index_gdzie_jest2 = napis4.find('bala')
@@ -53,8 +53,11 @@ else:
 #2.)Podział tekstu na fragmenty
 piec_liczb = input('Podaj pięć liczb. Oddziel je przecinkiem')
 piec_liczb_po_podziale = piec_liczb.split(',')
+#ta funkcja tworzy listę. Elementy, które wcześniej były oddzielone ",", teraz są osobnymi elementami listy
+#po funkcji .split() w nawiasie podajemy znak, którym oddzielone mają być znaki podane przez użytkownika
 print(piec_liczb_po_podziale)
 trzecia_liczba = int(piec_liczb_po_podziale[2])
+#w nawiasie kwadratowym po nazwie zmiennej podajemy indeks liczby, której akurat potrzebujemy
 print(trzecia_liczba + 33)
 
 #3.) Łączenie napisów
