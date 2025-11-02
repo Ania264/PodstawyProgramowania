@@ -1,4 +1,4 @@
-#Rozwiązywanie równania kwadratowego
+#Rozwiązywanie równania kwadratowego:
 
 a = float(input('Podaj liczbę a =/= 0'))
 b = float(input('Podaj liczbę b'))
