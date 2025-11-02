@@ -1,5 +1,5 @@
 #Rozwiązywanie równania kwadratowego
-'''
+
 a = float(input('Podaj liczbę a =/= 0'))
 b = float(input('Podaj liczbę b'))
 c = float(input('Podaj liczbę c'))
@@ -14,10 +14,10 @@ elif delta == 0:
     x = (-b) / (2 * a)
     print('x1 = x2 = {}'.format(x))
 else:
-    print('brak rozwiązań')'''
+    print('brak rozwiązań')
 
 #Zadanie 12.
-'''pisemny_j_polski = int(input('pisemny polski'))
+pisemny_j_polski = int(input('pisemny polski'))
 pisemny_j_obcy = int(input('pisemny obcy'))
 pisemny_dodatkowy = int(input('pisemny dodatkowy'))
 ustny_j_polski = int(input('ustny polski'))
@@ -29,7 +29,7 @@ if pisemny_j_polski >= 30 and pisemny_j_obcy >= 30 and pisemny_dodatkowy >= 30 a
 elif (pisemny_j_polski + pisemny_j_obcy + pisemny_dodatkowy + ustny_j_polski + ustny_j_obcy) / 5 >= 30:
     print('zdałeś z amnestią')
 else:
-    print('nie zdałeś!')'''
+    print('nie zdałeś!')
 
 #Zadanie 14.
 a = float(input('Podaj liczbę a =/= 0'))

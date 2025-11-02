@@ -1,20 +1,22 @@
 napis = 'informatyka'
 
+#każdy znak napisu ma swój indeks. Indeksy zaczynają się od 0, a NIE od 1
+
 #I. Fragment tekstu:
 #1) wycinanie od ... do
 print(napis[2:5]) #czyli tak naprawdę od 2 do 4
 
 #2) wycinanie od ... do co ileś
-print(napis[2:10:2])
+print(napis[2:10:2])    #czyli program będzie wypisywał znaki od 2 do 10 co 2
 
 #3) wycinanie od początku
 print(napis[:3])
 
 #4) wycinanie do końca
-print(napis[7:])
+print(napis[7:])    #czyli program wypisze wszystkie znaki od 7 do końca
 
 #5) czytanie od końca
-print(napis[::-2])
+print(napis[::-2])  #program napisze napis od końca, co drugi znak
 
 #II. Zawieranie się znaku w słowie
 if 'x' in napis:
@@ -35,7 +37,9 @@ print(index_gdzie_jest)
 
 napis4 = 'alabalalalabala'
 index_gdzie_jest2 = napis4.find('bala')
+#program wypisze indeks znaku, na którym zaczyna się szukany fragment
 index_gdzie_jest3 = napis4.find('bala', index_gdzie_jest2 + 1)
+#program wypisze indeks znaku, na którym zaczyna się szukany fragment za drugim razem
 index_gdzie_jest4 = napis4.find('xyz', index_gdzie_jest2 + 1)
 print(index_gdzie_jest2)
 print(index_gdzie_jest3)
@@ -47,11 +51,11 @@ else:
     print('xyz nie jest w napisie')
 
 #2.)Podział tekstu na fragmenty
-'''piec_liczb = input('Podaj pięć liczb. Oddziel je przecinkiem')
+piec_liczb = input('Podaj pięć liczb. Oddziel je przecinkiem')
 piec_liczb_po_podziale = piec_liczb.split(',')
 print(piec_liczb_po_podziale)
 trzecia_liczba = int(piec_liczb_po_podziale[2])
-print(trzecia_liczba + 33)'''
+print(trzecia_liczba + 33)
 
 #3.) Łączenie napisów
 lista_napisow = ['Windows', 'jest', 'tworzony', 'dla', 'kasy']
@@ -60,6 +64,7 @@ print(cale_zdanie)
 
 lista_napisow2 = ['abc', 'xyz', 'bbc', 'tvn']
 cale_zdanie2 = '\n'.join(lista_napisow2)
+# \n oznacza znak nowej linii, więc każdy z elementów listy_napisow_2 będzie zapisany od nowej linii
 print(cale_zdanie2)
 
 #4.) Zliczanie danego znaku w tekście
