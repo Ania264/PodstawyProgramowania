@@ -98,3 +98,24 @@ print(len(napis7))
 #7.) Powielanie stringa
 napis8 = 'informatyka'
 print(napis8 * 3)
+
+
+#8.) Funkcje testujące cyfry i litery
+napis9 = 'qwerty'
+if napis9.isalpha() == True:
+    print('słowo składa się z liter')
+else:
+    print('słowo nie składa się z liter')
+
+
+napis10 = '1410'
+if napis10.isdigit() == True:
+    print('słowo składa się z cyfr')
+else:
+    print('słowo nie składa się z cyfr')
+
+napis11 = '1410w'
+if napis11.isalnum() == True:
+    print('słowo składa się tylko z cyfr lub liter')
+else:
+    print('słowo nie składa się tylko z cyfr lub liter')
