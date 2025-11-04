@@ -51,14 +51,14 @@ else:
     print('xyz nie jest w napisie')
 
 #2.)Podział tekstu na fragmenty
-piec_liczb = input('Podaj pięć liczb. Oddziel je przecinkiem')
+'''c_liczb = input('Podaj pięć liczb. Oddziel je przecinkiem')
 piec_liczb_po_podziale = piec_liczb.split(',')
 #ta funkcja tworzy listę. Elementy, które wcześniej były oddzielone ",", teraz są osobnymi elementami listy
 #po funkcji .split() w nawiasie podajemy znak, którym oddzielone mają być znaki podane przez użytkownika
 print(piec_liczb_po_podziale)
 trzecia_liczba = int(piec_liczb_po_podziale[2])
 #w nawiasie kwadratowym po nazwie zmiennej podajemy indeks liczby, której akurat potrzebujemy
-print(trzecia_liczba + 33)
+print(trzecia_liczba + 33)'''
 
 #3.) Łączenie napisów
 lista_napisow = ['Windows', 'jest', 'tworzony', 'dla', 'kasy']
@@ -74,3 +74,27 @@ print(cale_zdanie2)
 napis5 = 'prawdopodobieństwo'
 ile_razy_o = napis5.count('o')
 print(ile_razy_o)
+
+
+#5.) "Mutowalność" stringów
+napis6 = "fiwyka"
+'''napis6[2] = "z"
+print(napis6)'''
+#Wniosek: Stringi są niemutowalne, czyli nie można podmieniać pojedynczych liter
+
+#Sposób na zmutowanie stringa
+napis6_lista = list(napis6)
+print(napis6_lista)
+napis6_lista[2] = "z"
+print(napis6_lista)
+napis6 = ''.join(napis6_lista)
+print(napis6)
+
+
+#6.) Długość napisu
+napis7 = 'językpolski'
+print(len(napis7))
+
+#7.) Powielanie stringa
+napis8 = 'informatyka'
+print(napis8 * 3)
