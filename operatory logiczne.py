@@ -27,7 +27,7 @@ print(2 == 3 and 3 > 1 or 2 > 6)
 print(not(2 == 3 and 3 > 1 or 2 > 6))
 
 
-# operatory standardowe
+# operatory standardowe:
 print(2 + 3)
 print(2 - 3)
 print(2 * 3)
@@ -47,3 +47,6 @@ print(12 // 5)
 
 #Reszta z dzielenia liczby a przez liczbę b
 print(12 % 5)
+
+
+
