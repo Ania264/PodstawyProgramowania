@@ -43,7 +43,10 @@ for x, y, z in zip(lista1, lista2, lista3):
 
 #Zadanie 17
 n = int(input('Podaj ile będzie liczb'))
+suma = 0
 
 for x in range(n):
     liczba = int(input('Podaj liczbę'))
-    print(liczba)
+    suma = suma + liczba
+
+print(suma)
