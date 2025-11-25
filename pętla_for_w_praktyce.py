@@ -36,5 +36,14 @@ for x, y, z in zip(lista1, lista2, lista3):
     print(f'{x}\t{y}\t{z}')'''
 
 #Sposób 2
-for i in range(10):
-    print(f'{lista1[i]}\t{lista2[i]}\t{lista3[i]}')
+'''for i in range(10):
+    print(f'{lista1[i]}\t{lista2[i]}\t{lista3[i]}')'''
+
+
+
+#Zadanie 17
+n = int(input('Podaj ile będzie liczb'))
+
+for x in range(n):
+    liczba = int(input('Podaj liczbę'))
+    print(liczba)
