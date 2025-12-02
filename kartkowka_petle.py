@@ -44,8 +44,8 @@ lista3 = [100]
     lista3.append(100)  #w nawiasie można podać cokolwiek'''
 
 
-    for x in lista3:
-        liczba = float(input("Podaj liczbę"))
-        print(liczba)
-        if liczba != 0:
-            lista3.append(1)
+'''for x in lista3:
+    liczba = float(input("Podaj liczbę"))
+    print(liczba)
+    if liczba != 0:
+        lista3.append(1)'''
