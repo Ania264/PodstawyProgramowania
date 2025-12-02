@@ -1,5 +1,8 @@
 # Zadania z pdf
 
+from math import inf
+# inf - nieskończoność
+
 #Zadanie 15:
 
 X = list(range(0, 103, 3))
@@ -43,10 +46,39 @@ for x, y, z in zip(lista1, lista2, lista3):
 
 #Zadanie 17
 n = int(input('Podaj ile będzie liczb'))
-suma = 0
+'''suma = 0
+max_liczba = -inf   #minus nieskończoność
+min_liczba = inf    #plus nieskończoność
+ilosc_mniejszych_3 = 0
+ilosc_z_przedzialu = 0
 
 for x in range(n):
     liczba = int(input('Podaj liczbę'))
     suma = suma + liczba
+    if liczba > max_liczba:
+        max_liczba = liczba
+    if liczba < min_liczba:
+        min_liczba = liczba
+    if liczba < 3:
+        ilosc_mniejszych_3 = ilosc_mniejszych_3 + 1
+    if liczba > -2 and liczba <= 11:
+        ilosc_z_przedzialu = ilosc_z_przedzialu + 1
+
 
 print(suma)
+print(suma / n)
+print(max_liczba)
+print(min_liczba)
+print(ilosc_mniejszych_3)
+print(ilosc_z_przedzialu)'''
+
+lista = []
+
+for x in range(n):
+    liczba = int(input('Podaj liczbę'))
+    lista.append(liczba)
+
+print(sum(lista))
+print(sum(lista) / n)
+print(max(lista))
+print(min(lista))
