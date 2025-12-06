@@ -11,15 +11,15 @@ print(suma)"""
 
 
 #1. Pętla:
-
-"""liczba = 0
+'''
+liczba = 0
 suma = 0
 
 for u in range(5):
     liczba = float(input("Podaj liczbę"))
     suma = suma + liczba
     
-print(suma)"""
+print(suma)'''
 
 '''
 #Listy:

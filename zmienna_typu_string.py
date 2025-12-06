@@ -51,14 +51,14 @@ else:
     print('xyz nie jest w napisie')
 
 #2.)Podział tekstu na fragmenty
-'''c_liczb = input('Podaj pięć liczb. Oddziel je przecinkiem')
+piec_liczb = input('Podaj pięć liczb. Oddziel je przecinkiem')
 piec_liczb_po_podziale = piec_liczb.split(',')
 #ta funkcja tworzy listę. Elementy, które wcześniej były oddzielone ",", teraz są osobnymi elementami listy
 #po funkcji .split() w nawiasie podajemy znak, którym oddzielone mają być znaki podane przez użytkownika
 print(piec_liczb_po_podziale)
 trzecia_liczba = int(piec_liczb_po_podziale[2])
 #w nawiasie kwadratowym po nazwie zmiennej podajemy indeks liczby, której akurat potrzebujemy
-print(trzecia_liczba + 33)'''
+print(trzecia_liczba + 33)
 
 #3.) Łączenie napisów
 lista_napisow = ['Windows', 'jest', 'tworzony', 'dla', 'kasy']
@@ -74,95 +74,3 @@ print(cale_zdanie2)
 napis5 = 'prawdopodobieństwo'
 ile_razy_o = napis5.count('o')
 print(ile_razy_o)
-
-
-#5.) "Mutowalność" stringów
-napis6 = "fiwyka"
-'''napis6[2] = "z"
-print(napis6)'''
-#Wniosek: Stringi są niemutowalne, czyli nie można podmieniać pojedynczych liter
-
-#Sposób na zmutowanie stringa
-napis6_lista = list(napis6)
-print(napis6_lista)
-napis6_lista[2] = "z"
-print(napis6_lista)
-napis6 = ''.join(napis6_lista)
-print(napis6)
-
-
-#6.) Długość napisu
-napis7 = 'językpolski'
-print(len(napis7))
-
-#7.) Powielanie stringa
-napis8 = 'informatyka'
-print(napis8 * 3)
-
-
-#8.) Funkcje testujące cyfry i litery
-napis9 = 'qwerty'
-if napis9.isalpha() == True:
-    print('słowo składa się z liter')
-else:
-    print('słowo nie składa się z liter')
-
-
-napis10 = '1410'
-if napis10.isdigit() == True:
-    print('słowo składa się z cyfr')
-else:
-    print('słowo nie składa się z cyfr')
-
-napis11 = '1410w'
-if napis11.isalnum() == True:
-    print('słowo składa się tylko z cyfr lub liter')
-else:
-    print('słowo nie składa się tylko z cyfr lub liter')
-
-
-#9.) Kody ASCII
-
-#9.1 ze znaku na kod ASCII
-print(ord('A'))
-
-#9.2 z kodu ASCII na znak
-print(chr(66))
-
-#Zagadka co wyjdzie:
-print(chr(ord('Z')))
-#wyjdzie Z, bo najpierw robimy kod ASCII z Z czyli 90, a poóźniej znak z kodu 90 czyli z powrotem Z.
-
-
-#10.) Funkcja translate
-slownik = str.maketrans('ąęćóżśźłń', 'aecozszln')
-napis12 = 'ińfórmątyką'
-napis_poprawny = napis12.translate(slownik)
-print(napis_poprawny)
-
-
-#11.) Funkcje dużych i małych literek
-napis13 = 'KoNgO'
-napis13_tylko_duże = napis13.upper()
-print(napis13_tylko_duże)
-
-napis13_tylko_małe = napis13.lower()
-print(napis13_tylko_małe)
-
-
-#12.) Podstawianie ciągu znaków
-napis14 = 'chleb kosztuje 15 zł, a bułka 5 zł.'
-napis14_w_euro = napis14.replace('zł', '€')
-print(napis14_w_euro)
-
-
-#13.) Sortowanie i odwracanie napisu
-#13.1 odwracanie napisu
-napis15 = 'kemot'
-napis15_odwrotnie = napis15[::-1]
-
-#13.2 sortowanie napisu
-napis16 = 'dbca'
-napis16_posortowany_lista = sorted(napis16)
-napis16_posortowany = ''.join(napis16_posortowany_lista)
-print(napis16_posortowany)
