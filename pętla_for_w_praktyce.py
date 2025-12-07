@@ -7,18 +7,13 @@ from math import inf
 
 X = list(range(0, 103, 3))
 
-'''#a)
+#a)
 print(f'x\ty')
 for x in X:
     y = 0.5 * x + 3
     #print(x, y)
     print(f'{x}\t{y}')
 
-print(f'x\ty')
-for x in range(0, 103, 3):
-    y = 0.5 * x + 3
-    #print(x, y)
-    print(f' {x}\t{y}')'''
 
 """#b)
 print(f'x\ty')
