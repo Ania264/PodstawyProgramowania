@@ -19,7 +19,7 @@ for x in range(n):
 '''n = int(input("Wysokość trójkąta = "))
 
 for x in range(n):
-   rint('*' * (x + 1))'''
+   print('*' * (x + 1))'''
 
 
 #Trójkąt równoramienny dowolny:
