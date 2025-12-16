@@ -7,6 +7,8 @@ while liczba > 0:   #tak długo jak liczba jest dodatnia, pętla się wykonuje
     licznik = licznik + 1
 print(licznik)
 '''
+import time
+
 #Zadanie 1:
 '''x = input('Podaj liczbę lub q aby zakończyć')
 licznik =0
@@ -65,12 +67,58 @@ print(wynik)'''
 
 
 #Zadanie 4:
-i = 10
+'''i = 10
 
-'''while i >= 1:
+while i >= 1:
     print(i)
-    i -= 1'''
+    i -= 1
 
 for x in range(i):
     print(i)
-    i -= 1
+    i -= 1'''
+
+
+#ZAD.5 DO DOMU
+
+#Zad. 6:
+wynik1 = 0
+wynik2 = 0
+akcja = 0
+
+'''while not ((wynik1 >= 21 or wynik2 >= 21) and abs(wynik1 - wynik2) >= 2):
+    akcja += 1
+    wygrana = int(input('Podaj drużynę wygraną'))
+    if wygrana == 1:
+        wynik1 += 1
+    else:
+        wynik2 += 1
+    print(f'Akcja {akcja}')
+    print('Podaj nr drużyny która wygrała')
+    print(wygrana)
+    print(f'Wynik {wynik1}:{wynik2}')
+if wynik1 > wynik2 :
+    print('Wygrała drużyna 1')
+else:
+    print('Wygrała drużyna 2')'''
+
+
+#Symulacja gry z użyciem "RANDOM":
+
+from random import randint
+from time import sleep
+
+while not ((wynik1 >= 21 or wynik2 >= 21) and abs(wynik1 - wynik2) >= 2):
+    akcja += 1
+    wygrana = randint(1,2)
+    if wygrana == 1:
+        wynik1 += 1
+    else:
+        wynik2 += 1
+    print(f'Akcja {akcja}')
+    print(wygrana)
+    print(f'Wynik {wynik1}:{wynik2}')
+    sleep(1)
+if wynik1 > wynik2 :
+    print('Wygrała drużyna 1')
+else:
+    print('Wygrała drużyna 2')
