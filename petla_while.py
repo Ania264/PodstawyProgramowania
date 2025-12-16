@@ -107,7 +107,7 @@ else:
 from random import randint
 from time import sleep
 
-while not ((wynik1 >= 21 or wynik2 >= 21) and abs(wynik1 - wynik2) >= 2):
+'''while not ((wynik1 >= 21 or wynik2 >= 21) and abs(wynik1 - wynik2) >= 2):
     akcja += 1
     wygrana = randint(1,2)
     if wygrana == 1:
@@ -121,4 +121,30 @@ while not ((wynik1 >= 21 or wynik2 >= 21) and abs(wynik1 - wynik2) >= 2):
 if wynik1 > wynik2 :
     print('Wygrała drużyna 1')
 else:
-    print('Wygrała drużyna 2')
+    print('Wygrała drużyna 2')'''
+
+
+#Zadanie 7:
+'''liczba = int(input('Podaj liczę'))
+
+while liczba > 0:
+    cyfra = liczba % 10
+    liczba = liczba // 10
+    print(cyfra, end = '')
+'''
+
+#Zadanie 8:
+liczba = int(input('Podaj liczbę'))
+d = 2
+ile_czyn = 0
+ile_r_czyn = 0
+
+while liczba > 1:
+    if liczba % d == 0:
+        ile_r_czyn += 1
+    while liczba % d == 0:
+        liczba = liczba // d
+        ile_czyn += 1
+    d += 1
+print(ile_czyn)
+print(ile_r_czyn)
