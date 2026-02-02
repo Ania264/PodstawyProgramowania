@@ -54,3 +54,13 @@ print(lista1)
 '''
 lista1 = [x for x in lista1 if x != 2]
 print(lista1)
+
+
+#j)
+'''lista3 = [x ** 2 for x in lista1]
+print(lista3)'''
+
+lista3 = []
+for x in lista1:
+    lista3.append(x ** 2)
+print(lista3)
