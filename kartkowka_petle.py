@@ -43,9 +43,9 @@ lista3 = [100]
     #jakbyśmy teraz skończyli, to by wydrukowało się tylko raz "xd" bo jest w liście 1 element
     lista3.append(100)  #w nawiasie można podać cokolwiek'''
 
-
-'''for x in lista3:
+#Zadanie 4 gr. A
+for x in lista3:
     liczba = float(input("Podaj liczbę"))
     print(liczba)
     if liczba != 0:
-        lista3.append(1)'''
+        lista3.append(1)

@@ -70,7 +70,7 @@ lista = [0]
 for i in lista:
     print('Cześć')
     lista.append(0)
-    '''
+'''
 
 #4. Pętla while
 liczba = 5
