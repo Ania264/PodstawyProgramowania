@@ -41,3 +41,35 @@ print(suma2)
 
 
 #ZADANIE 5 DO DOMU
+lista = ['informatyka', 'matematyka', 'fizyka', 'geografia', 'biologia', 'chemia']
+
+#sposób 1
+b = 'biologia'
+if b in lista:
+    print('Jest')
+else:
+    print('Nie ma')
+
+#sposób 2
+l = 0
+for x in lista:
+    if x == 'biologia':
+        print('Jest')
+        l += 1
+if l == 0:
+        print('Nie ma')
+
+#sposób 3
+lista.index('biologia')
+if lista.index('biologia') >= 0:
+    print('Jest')
+
+#sposób 4
+lista.count('biologia')
+if lista.count('biologia') > 0:
+    print('Jest')
+else:
+    print('Nie ma')
+
+#sposób 5
+#??????
