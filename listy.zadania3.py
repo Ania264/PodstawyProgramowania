@@ -6,6 +6,9 @@ plansza = [
 [2,  9,  4,  6]
 ]
 
+
+# Zadanie 6.1.
+'''
 #średnie w wierszach
 for x in plansza:
     print(sum(x) / len(x))
@@ -15,14 +18,13 @@ for i in range(len(plansza[0])):
     suma = 0
     for j in range(len(plansza)):
         suma += plansza[j][i]
-    print(suma / len(plansza))
+    print(suma / len(plansza))'''
 
-
-#Zadanie 6.2
+# Zadanie 6.2.
 for i in range(len(plansza)):
     for j in range(len(plansza[0])):
         licznik = 0
-        srodkowy = plansza[i][j]    #szary element
+        srodkowy = plansza[i][j]  # szary element
         '''if srodkowy < plansza[i - 1][j]:
             licznik += 1
         if srodkowy < plansza[i + 1][j + 1]:
