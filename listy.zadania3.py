@@ -21,16 +21,16 @@ for i in range(len(plansza[0])):
     print(suma / len(plansza))'''
 
 # Zadanie 6.2.
-for i in range(len(plansza)):
+'''for i in range(len(plansza)):
     for j in range(len(plansza[0])):
         licznik = 0
-        srodkowy = plansza[i][j]  # szary element
-        '''if srodkowy < plansza[i - 1][j]:
+        srodkowy = plansza[i][j]  # szary element'''
+'''        if srodkowy < plansza[i - 1][j]:
             licznik += 1
         if srodkowy < plansza[i + 1][j + 1]:
             licznik += 1'''
 
-        for x in range(i - 1, (i + 1) + 1):
+'''        for x in range(i - 1, (i + 1) + 1):
             for y in range(j - 1, (j + 1) + 1):
                 if i < 0:
                     x = len(plansza) - 1
@@ -44,3 +44,49 @@ for i in range(len(plansza)):
                 if srodkowy < czerwony:
                     licznik += 1
         print(i, j, licznik)
+'''
+
+#6.3
+#Suma liczb jest największa w wierszu 1 i 4
+#Iloczyn liczb jest największy w kolumnie 2
+
+#6.4
+#???????????
+
+#8.
+lista = [1, 5, 1, 2, 2, 1, 6, 7, 3, 2, 2, 1, 1, 4]
+zbior = []
+
+for i in lista:
+    if i not in zbior:
+        zbior.append(i)
+        lista.count(i)
+        print(f'{i} wystąpiło {lista.count(i)} razy.')
+print(zbior)
+
+
+#9.
+plecak = [
+("książka", 1.2),
+("zeszyt", 0.5),
+("laptop", 2.5),
+("piórnik", 0.3),
+("butelka z wodą", 1.0),
+("strój sportowy", 1.8)
+]
+
+
+
+'''rzeczy_w1 = []
+
+for i in range(len(plecak)):
+    for j in range(len(plecak[0])):
+        j += 1
+        if j > plecak[4][1]:
+            rzeczy_w1.append(plecak[i][j-1])
+print(rzeczy_w1)'''
+
+#??????????
+
+#10.
+#????????????
