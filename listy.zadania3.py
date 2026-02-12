@@ -76,17 +76,33 @@ plecak = [
 ]
 
 
+#a)
+rzeczy = []
 
-'''rzeczy_w1 = []
+#sposób1:
+'''for i in range(len(plecak)):
+    waga = plecak[i][1]
+    if waga < 1:
+        rzecz = plecak[i][0]
+        rzeczy.append(rzecz)
+print(rzeczy)
+'''
 
-for i in range(len(plecak)):
-    for j in range(len(plecak[0])):
-        j += 1
-        if j > plecak[4][1]:
-            rzeczy_w1.append(plecak[i][j-1])
-print(rzeczy_w1)'''
+#sposób2:
+for w in plecak:
+    waga = w[1]
+    if waga < 1:
+        rzecz = w[0]
+        rzeczy.append(rzecz)
+print(rzeczy)
 
-#??????????
+
+#b)
+wagi = [1.1 * x[1] for x in plecak]
+print(wagi)
+#tu jest na razie nie zaokrąglone
+
+wagi = ['{}'.format(round(1.1 * x[1],2)) for x in plecak]
+print(wagi)
 
 #10.
-#????????????
