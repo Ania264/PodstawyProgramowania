@@ -37,3 +37,30 @@ print(wynik2)
 k = 5
 wynik3 = iloczyn_vik(v, k)
 print(wynik3)'''
+
+
+# Zad 2.1
+
+def czy_anagramy(s1, s2):
+    if sorted(s1) == sorted(s2):
+        return True
+    else:
+        return False
+
+#print(cz_anagramy('nosek', 'keson'))
+s1 = 'nosek'
+s2 = "keson"
+print(sorted(s1) == sorted(s2))
+
+#Zadanie 2.2
+def jaki_trojkat(a, b, c):
+    if a + b + c > 2*max([a, b, c]):
+        if a ** 2 + b ** 2 + c ** 2 == 2*max([a, b, c]) ** 2:
+            print('prostokątny')
+        elif a ** 2 + b ** 2 + c ** 2 > 2 * max([a, b, c]) ** 2:
+            print('ostrokątny')
+        elif a ** 2 + b ** 2 + c ** 2 < 2*max([a, b, c]) ** 2:
+            print('rozwartokątny')
+    else:
+        print('To nie jest trójkąt')
+jaki_trojkat(5, 5, 12)
