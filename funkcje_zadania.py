@@ -27,7 +27,7 @@ print(wynik2)
 
 
 #c) SPRAWDZ CZY GIT
-'''def iloczyn_vik(v, k):
+def iloczyn_vik(v, k):
     ilo = []
     for i in range(len(v)):
         iloczyn = v[i] * k
@@ -36,7 +36,7 @@ print(wynik2)
 
 k = 5
 wynik3 = iloczyn_vik(v, k)
-print(wynik3)'''
+print(wynik3)
 
 
 # Zad 2.1
@@ -64,3 +64,19 @@ def jaki_trojkat(a, b, c):
     else:
         print('To nie jest trójkąt')
 jaki_trojkat(5, 5, 12)
+
+
+#Zadanie 2.3
+def liczby_niezalezne(lista):
+    wynik = []
+    for e in lista:
+        dzielniki = []
+        for l in lista:
+            if e % l == 0:
+                dzielniki.append(1)
+        if len(dzielniki) == 1:
+            wynik.append(e)
+    return wynik
+print(liczby_niezalezne([12, 7, 3, 6, 21, 74]))
+
+#ZAD DOM 2.4, 2.5, 2.6, 2.7, 2.8
