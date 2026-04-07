@@ -14,7 +14,7 @@ for w in dane:
 print(prostokaty)
 
 #Zad 1.1
-prostokaty.sort(key = lambda x: x[0] * x[-1])
+prostokaty.sort(key = lambda x: x[0] * x[1])
 #print(prostokaty[0], prostokaty[-1])
 p_min = prostokaty[0]
 p_max = prostokaty[-1]
